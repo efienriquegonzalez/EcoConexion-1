@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://dl.dropboxusercontent.com/s/etuma8df6awlf4r/slim-before-after.min.css' rel='stylesheet'/>
+    <link rel="icon" href="/img/logo.webp">
+    <title>EcoConexion</title>
+</head>
+<body class="bg-white text-gray-800">
+     <!-- Navegación -->
+     <nav class="bg-white px-5 py-3 shadow-md">
+        <div class=" mx-auto flex justify-between items-center"> <!--Le quité la clase container-->
+            <a href="#" class="flex items-center">
+                <img src="/img/logo.webp" alt="EcoConexion Logo" class="h-10">
+            </a>
+            <div class="flex-grow flex justify-center items-center space-x-4">
+                <a href="#realidad" class="text-green-600 hover:text-green-800">Situación Real</a>
+                <a href="#about" class="hover:text-gray-700">Sobre Nosotros</a>
+                <div class="relative">
+                    <button id="blog-menu-button" class="text-gray-700 hover:text-green-600 flex items-center">
+                        Blog
+                        <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </button>
+                    <div id="blog-menu" class="absolute hidden bg-white shadow-lg z-10">
+                        <a href="#areas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Áreas Protegidas</a>
+                        <a href="#reciclaje" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Reciclaje y Gestión de Residuos</a>
+                        <a href="#cuidado" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cuidado Ambiental</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600">Contáctanos</a>
+        </div>
+    </nav>
+    <!-- Sección de Bienvenida -->
+    <section class="bg-white py-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-5"> <!--Le quité la clase container-->
+            <!-- Contenido de texto -->
+            <div class="flex-1 mb-10 md:mb-0 text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold mb-3">EcoConexión</h1>
+                <p class="text-lg mb-5">Conectados por un futuro verde</p>
+                <a href="#contact" class="inline-block bg-green-500 text-white px-8 py-3 rounded hover:bg-green-600 transition-colors">Contáctanos</a>
+            </div>
+            <!-- Imagen del hombre con el teléfono -->
+            <div class="flex-1 flex justify-center md:justify-end">
+                <img src="/img/banner.webp" alt="Hombre dando pulgar arriba" class="max-w-sm md:max-w-md">
+            </div>
+        </div>
+    </section>
+    <!--Situación real-->
+    <div class=" mx-auto px-5 py-12 text-white" style="background-color: #161E2E;"> <!-- Centrado, padding y color de fondo y texto -->
+        <h2 class="text-2xl text-center mb-6">Situación Real: Norway’s Ålfotbreen Glacier Melting Faster in Recent Summers</h2>
+        <div class="slim-comparison-container rounded-lg overflow-hidden relative" data-slim-params='{"position":"horizontal","startPosition":50}'>
+            <div class="slim-comparison-wrapper py-12">
+                <div class="slim-before-wrapper">
+                    <img src="/img/Alfotbreen before.webp" alt="Before" class="w-full h-auto object-cover" style="min-height: 600px; max-height: 200px;"/>
+                    <span class="slim-before-caption">Antes</span>
+                </div>
+                <div class="slim-after-wrapper">
+                    <img src="/img/Alfotbreen after.webp" alt="After" class="w-full h-auto object-cover" style="min-height: 600px; max-height: 200px;"/>
+                    <span class="slim-after-caption">Después</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Socios y Aliados -->
+    <div class="py-6" style="background-color: #F4FBF7;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl font-semibold text-center mb-6">Nuestros Partners y Aliados</h2>
+            <div class="flex justify-center space-x-4 md:space-x-8 lg:space-x-16">
+                <img src="/img/prisma.webp"alt="Prisma" class="h-20">
+                <img src="/img/cima.webp"alt="CIMA" class="h-20">
+                <img src="/img/ficus.webp"alt="FICUS" class="h-20">
+                <img src="/img/aider.webp"alt="AIDER" class="h-20">
+                <img src="/img/fondo.webp"alt="FONDO" class="h-20">
+            </div>
+        </div>
+    </div>
+    <!-- Propósito -->
+    <div class="flex flex-wrap bg-white items-center">
+        <!-- Contenedor de Propósito -->
+        <div class="container w-full md:w-1/2 p-8">
+            <h1 class="text-2xl font-bold text-center mb-6">PROPÓSITO</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-bl-lg rounded-br-lg border-t-0 border-l border-r border-b" style="border-color: #FFFFFF; border-width: 2px;">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div style="background-color: #F4FBF7; padding: 8px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px;">
+                            <svg class="text-green-600 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">01</span>
+                    </div>
+                    <p>Concientizar sobre la importancia del cuidado del medio ambiente y promover la acción responsable.</p>
+                </div>
+
+                <div class="p-4 rounded-bl-lg rounded-br-lg border-t-0 border-l border-r border-b" style="border-color: #FFFFFF; border-width: 2px;">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div style="background-color: #F4FBF7; padding: 8px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px;">
+                            <svg class="text-green-600 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">02</span>
+                    </div>
+                    <p>Ser una fuente confiable de información sobre temas ambientales y de sostenibilidad.</p>
+                </div>
+
+                <div class="p-4 rounded-bl-lg rounded-br-lg border-t-0 border-l border-r border-b" style="border-color: #FFFFFF; border-width: 2px;">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div style="background-color: #F4FBF7; padding: 8px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px;">
+                            <svg class="text-green-600 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">03</span>
+                    </div>
+                    <p>Contribuir al desarrollo sostenible mediante la educación y la inspiración, utilizando la tecnología como herramienta.</p>
+                </div>
+
+                <div class="p-4 rounded-bl-lg rounded-br-lg border-t-0 border-l border-r border-b" style="border-color: #FFFFFF; border-width: 2px;">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div style="background-color: #F4FBF7; padding: 8px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px;">
+                            <svg class="text-green-600 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">04</span>
+                    </div>
+                    <p>Fomentar prácticas sostenibles y respetuosas con el entorno.</p>
+                </div>
+        </div>
+    </div>
+        <!-- Contenedor de Imagen -->
+        <div class="w-full md:w-1/2">
+            <img src="/img/proposito.webp" alt="Imagen Propósito" class="w-full h-full object-cover">
+        </div>
+        
+    </div>
+    <!-- Blog de Noticias -->
+    <div class="py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">BLOG DE NOTICIAS</h2>
+            <p class="text-center mb-10">Acá tendrás acceso directo a información relevante de Trujillo.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full" src="/img/Santuario Calipuy.webp" alt="Áreas Protegidas">
+                    <div class="p-5">
+                        <h4 class="text-green-500 text-xm font-bold mb-2">Áreas protegidas</h4>
+                        <h5 class="text-xl font-bold mb-2">Conoce el Santuario Nacional de Calipuy a través de un recorrido virtual</h5>
+                        <p class="text-gray-700 mb-4">Los responsables del santuario publicaron un video para conocer y disfrutar la belleza natural de esta área protegida de La Libertad.</p>
+                        <a href="#" class="text-white bg-green-500 hover:bg-green-700 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">Descubre más </a>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full" src="/img/Residuos solidos.webp" alt="Reciclaje y gestión de residuos">
+                    <div class="p-5">
+                        <h4 class="text-green-500 text-xm font-bold mb-2">Reciclaje y gestión de residuos</h4>
+                        <h5 class="text-xl font-bold mb-2">Trujillo: Nuevo espacio para residuos sólidos operará en setiembre</h5>
+                        <p class="text-gray-700 mb-4">La habilitación del nuevo espacio que será utilizado para la disposición de residuos sólidos de la ciudad de Trujillo, tiene un avance cercano al 70 % y podrá iniciar sus operaciones en setiembre de este año.</p>
+                        <a href="#" class="text-white bg-green-500 hover:bg-green-700 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">Descubre más </a>
+                    </div>
+                </div>
+                <!-- Tarjeta 3-->
+                <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full" src="/img/segat cuidado ambiental.webp" alt="Áreas Protegidas">
+                    <div class="p-5">
+                        <h4 class="text-green-500 text-xm font-bold mb-2">Cuidado ambiental</h4>
+                        <h5 class="text-xl font-bold mb-2">Segat impulsará la hora del planeta esta noche en Trujillo
+                        </h5>
+                        <p class="text-gray-700 mb-4">Esta iniciativa, que busca concienciar sobre la importancia de la conservación ambiental, se llevará a cabo el sábado 23 de marzo en los exteriores del Municipio de Trujillo a partir de las 7:00 p.m.</p>
+                        <a href="#" class="text-white bg-green-500 hover:bg-green-700 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">Descubre más </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Pie de página -->
+    <footer class="text-white"  style="background: #161E2E;">
+        <div class="container mx-auto py-8 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 ">
+                <!-- Logo y enlaces de política -->
+                <div>
+                    <img src="/img/logo.webp" alt="EcoConexion Logo" class="h-10">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Políticas de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <!-- Enlaces del menú -->
+                <div>
+                    <h2 class="text-lg font-semibold">Menu</h2>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Situación Real</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Información de contacto -->
+                <div>
+                    <h2 class="text-lg font-semibold">Contact</h2>
+                    <ul class="mt-4 space-y-2">
+                        <li><span class="font-semibold">Teléfono:</span> +51 999 999 999</li>
+                        <li><span class="font-semibold">Email:</span> ecoconexion@company.com</li>
+                    </ul>
+                </div>
+                <!-- Iconos de redes sociales -->
+                <div class="flex space-x-4 mt-4">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#00B871"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#00B871"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#00B871"></path> </g></svg>
+                    <svg class="h-8 w-8" fill="#00B871" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path></g></svg>
+                    <svg class="h-8 w-8" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="##00B871" stroke="##00B871"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#00B871"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g></svg>                
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('blog-menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('blog-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+</script>
+<script src='https://dl.dropboxusercontent.com/s/oarqj5m8bgfsv53/slim-before-after.min.js'></script>
+<script type='text/javascript'>
+	var MyComparison = new slimBeforeAfter();
+
+	//use refresh method for dynamicly created elements.
+	//MyComparison.refresh();
+
+	//use destroy method if you want to destroy plugin.
+	//MyComparison.destroy();
+
+</script>
+</body>
+</html>
